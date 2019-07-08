@@ -53,8 +53,27 @@ module.exports = {
 };
 ```
 
+## .vscode setting
+Add `.vscode/settings.json` file.
+
+```json
+{
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "javascript",
+    {"language": "typescript", "autoFix": true },
+    {"language": "vue", "autoFix": true}
+  ],
+}
+```
+
+ESLint plugin is below.
+[ESLint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
 ## Finally, execute lint fix.
 
 ```
-yarn lint --fix
+yarn lint
 ```
