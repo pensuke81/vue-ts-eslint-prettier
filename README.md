@@ -28,6 +28,17 @@ add `plugin:prettier/recommended` in .esilntrc.js
 extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript", "plugin:prettier/recommended"],
 ```
 
+
+and add rules for singleQuote.
+
+```
+rules: {
+  "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+  "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+  "prettier/prettier": ["error", { "singleQuote": true }],// add this line
+},
+```
+
 ## editorconfig setting
 Add new file `.editorconfig`
 
