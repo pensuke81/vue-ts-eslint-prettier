@@ -25,22 +25,7 @@ yarn add -D eslint-plugin-prettier
 add `plugin:prettier/recommended` in .esilntrc.js
 
 ```javascript
-extends: [
-  'plugin:vue/essential',
-  '@vue/prettier',
-  '@vue/typescript',
-  'plugin:prettier/recommended'// add this line
-]
-```
-
-## prettier setting
-Add new file `.prettierrc.js`
-
-```
-module.exports = {
-  tabWidth: 2,
-  singleQuote: true
-};
+extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript", "plugin:prettier/recommended"],
 ```
 
 ## editorconfig setting
@@ -56,6 +41,16 @@ indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+```
+
+## prettier setting
+Add new file `.prettierrc.js`
+
+```
+module.exports = {
+  tabWidth: 2,
+  singleQuote: true
+};
 ```
 
 ## Finally, execute lint fix.
