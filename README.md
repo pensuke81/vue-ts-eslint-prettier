@@ -25,7 +25,12 @@ yarn add -D eslint-plugin-prettier
 add `plugin:prettier/recommended` in .esilntrc.js
 
 ```javascript
-extends: ["plugin:vue/essential", "@vue/prettier", "@vue/typescript", "plugin:prettier/recommended"],
+extends: [
+    'plugin:vue/recommended',
+    '@vue/prettier',
+    '@vue/typescript',
+    'plugin:prettier/recommended'
+],
 ```
 
 
